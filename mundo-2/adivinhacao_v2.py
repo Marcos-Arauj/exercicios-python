@@ -1,12 +1,11 @@
-from random import randint
-
+import random
 
 print('Olá usuário! Vamos jogar um jogo de adivinhação?\n' \
 'Estou pensando em um número de entre 0 e 10, tente adivinhar!!!')
 
 numero = int(input('Qual o seu palpite? '))
 contador = 1
-n_computador = randint(0, 10)
+n_computador = random.randint(0, 10)
 
 while numero != n_computador:
     if n_computador > numero:
